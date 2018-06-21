@@ -78,17 +78,26 @@
     color: #8f4099 !important;
   }
 
-  @media (min-width:320px) {
+  @media (min-width:319px) {
     /* smartphones, iPhone, portrait 480x320 phones */
+    .follow {
+      visibility: visible;
+    }
     .player {
-      height: 400px;
+      height: 0px;
+      visibility: hidden;
     }
   }
 
-  @media (min-width:481px) {
+  @media (min-width:375) {
     /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+    .follow {
+      visibility: hidden;
+      height: 0px;
+    }
     .player {
       height: 400px;
+      visibility: visible;
     }
   }
 
@@ -96,7 +105,13 @@
     /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
     .player {
       height: 500px;
+      visibility: visible;
     }
+    .follow {
+      visibility: hidden;
+      height: 0px;
+    }
+
   }
 
   @media (min-width:961px) {
@@ -111,6 +126,11 @@
     /* hi-res laptops and desktops */
     .player {
       height: 500px;
+      visibility: visible
+    }
+    .follow {
+      visibility: hidden;
+      height: 0px;
     }
   }
 </style>
@@ -169,12 +189,14 @@
         <b>Hey there! We are using Spotify! We are going to listen to the same music. “30+1” before a party, while taking a
           shower, having a coffee with your friends ! The playlist will be updated and the songs will change periodically.
           Every song, but one. “Drake-4422”.</b>
-
       </p>
       <br/>
-      <div style="text-align: center">
+      <div style="text-align: center;">
         <iframe src="https://open.spotify.com/embed?uri=spotify:user:2s2chadx62sa4nyubahcv8c1g:playlist:48vfHRaIcU5ABtFAY9wtwU" width="100%"
           frameborder="0" allowtransparency="true" allow="encrypted-media" class="player"></iframe>
+
+        <iframe src="https://open.spotify.com/follow/1/?uri=spotify:user:2s2chadx62sa4nyubahcv8c1g&size=detail&theme=light" width="100%"
+           scrolling="no" frameborder="0" style="border:none; overflow:hidden;" allowtransparency="false" class="follow"></iframe>
       </div>
     </div>
 
