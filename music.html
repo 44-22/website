@@ -46,18 +46,16 @@
   }
 
   .w3-text-grey :hover {
-    background-color: #71c8bd !important;
-    color: #8f4099;
+    /* background-color: #71c8bd !important; */
   }
 
   .w3-white {
-    background-color: #71c8bc !important;
+    background-color: #8f4099 !important;
     color: white !important;
   }
 
   .w3-white :hover {
-    background-color: #71c8bc !important;
-    color: #8f4099;
+    /* background-color: #71c8bc !important; */
   }
 
   .w3-button {
@@ -76,6 +74,16 @@
 
   .w3-bar-item :hover {
     color: #8f4099 !important;
+    background-color: #71c8bd !important;
+  }
+
+  .w3-bar-item :hover {
+    background-color: #71c8bd;
+  }
+
+  .a :hover {
+    text-decoration: none;
+    border-bottom: 10px solid black;
   }
 
   @media (min-width:319px) {
@@ -138,7 +146,7 @@
 <body class="w3-light-grey w3-content" style="max-width:1600px">
 
   <!-- Sidebar/menu -->
-  <nav class="w3-sidebar w3-bar-block w3-white w3-text-grey w3-collapse w3-top w3-center" style="z-index:3;width:300px;font-weight:bold"
+  <nav class="animated slideInLeft w3-sidebar w3-bar-block w3-white w3-text-grey w3-collapse w3-top w3-center" style="z-index:3;width:300px;font-weight:bold"
     id="mySidebar">
     <br>
     <a href="index.html">
@@ -166,7 +174,7 @@
 
   <!-- Top menu on small screens -->
   <header class="w3-container w3-top w3-hide-large w3-white w3-xlarge w3-padding-16">
-    <span class="w3-left w3-padding">4422</span>
+    <span class="w3-left w3-padding"><a href="index.html" style="text-decoration: none"><b>4422</b></a></span>
     <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">&#9776;</a>
   </header>
 
@@ -196,7 +204,7 @@
           frameborder="0" allowtransparency="true" allow="encrypted-media" class="player"></iframe>
 
         <iframe src="https://open.spotify.com/follow/1/?uri=spotify:user:2s2chadx62sa4nyubahcv8c1g&size=detail&theme=light" width="100%"
-           scrolling="no" frameborder="0" style="border:none; overflow:hidden;" allowtransparency="false" class="follow"></iframe>
+          scrolling="no" frameborder="0" style="border:none; overflow:hidden;" allowtransparency="false" class="follow"></iframe>
       </div>
     </div>
 
