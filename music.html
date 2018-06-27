@@ -13,14 +13,15 @@
   }
 
   body {
-    background-image: url('img/cool_blur.jpg');
+    background-image: url('img/murale_blur.png');
     height: 100%;
 
     /* Center and scale the image nicely */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    position: absolute
+    position: absolute;
+    overflow:auto;
   }
 
   h1,
@@ -45,17 +46,9 @@
     color: white !important;
   }
 
-  .w3-text-grey :hover {
-    /* background-color: #71c8bd !important; */
-  }
-
   .w3-white {
     background-color: #8f4099 !important;
     color: white !important;
-  }
-
-  .w3-white :hover {
-    /* background-color: #71c8bc !important; */
   }
 
   .w3-button {
@@ -88,21 +81,13 @@
 
   @media (min-width:319px) {
     /* smartphones, iPhone, portrait 480x320 phones */
-    .follow {
-      visibility: visible;
-    }
     .player {
-      height: 0px;
-      visibility: hidden;
+      height: 400px;
     }
   }
 
   @media (min-width:375) {
     /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
-    .follow {
-      visibility: hidden;
-      height: 0px;
-    }
     .player {
       height: 400px;
       visibility: visible;
@@ -115,11 +100,6 @@
       height: 500px;
       visibility: visible;
     }
-    .follow {
-      visibility: hidden;
-      height: 0px;
-    }
-
   }
 
   @media (min-width:961px) {
@@ -134,11 +114,6 @@
     /* hi-res laptops and desktops */
     .player {
       height: 500px;
-      visibility: visible
-    }
-    .follow {
-      visibility: hidden;
-      height: 0px;
     }
   }
 </style>
@@ -174,7 +149,11 @@
 
   <!-- Top menu on small screens -->
   <header class="w3-container w3-top w3-hide-large w3-white w3-xlarge w3-padding-16">
-    <span class="w3-left w3-padding"><a href="index.html" style="text-decoration: none"><b>4422</b></a></span>
+    <span class="w3-left w3-padding">
+      <a href="index.html" style="text-decoration: none">
+        <b>4422</b>
+      </a>
+    </span>
     <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">&#9776;</a>
   </header>
 
@@ -188,23 +167,19 @@
     <!-- Push down content on small screens -->
     <div class="w3-hide-large" style="margin-top:83px"></div>
 
-    <div style="margin-left: 12%; margin-right:12%; margin-top: 5%; color: white">
+    <div style="margin-left: 10%; margin-right:10%; padding-top: 5%; color: white; width: 80%">
       <h1>
         <b>Music</b> - 30+1
       </h1>
 
       <p>
-        <b>Hey there! We are using Spotify! We are going to listen to the same music. “30+1” before a party, while taking a
-          shower, having a coffee with your friends ! The playlist will be updated and the songs will change periodically.
-          Every song, but one. “Drake-4422”.</b>
+        <b>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quisquam quo minima suscipit aliquam tenetur placeat nobis possimus accusamus quod facilis, perferendis aliquid amet, necessitatibus magni unde nulla omnis hic.
+        </b>
       </p>
       <br/>
-      <div style="text-align: center;">
+      <div style="text-align: center; margin: auto">
         <iframe src="https://open.spotify.com/embed?uri=spotify:user:2s2chadx62sa4nyubahcv8c1g:playlist:48vfHRaIcU5ABtFAY9wtwU" width="100%"
           frameborder="0" allowtransparency="true" allow="encrypted-media" class="player"></iframe>
-
-        <iframe src="https://open.spotify.com/follow/1/?uri=spotify:user:2s2chadx62sa4nyubahcv8c1g&size=detail&theme=light" width="100%"
-          scrolling="no" frameborder="0" style="border:none; overflow:hidden;" allowtransparency="false" class="follow"></iframe>
       </div>
     </div>
 
