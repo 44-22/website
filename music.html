@@ -49,6 +49,7 @@
   .w3-white {
     background-color: #8f4099 !important;
     color: white !important;
+    text-decoration: none;
   }
 
   .w3-button {
@@ -63,15 +64,22 @@
     text-align: center;
     cursor: pointer;
     white-space: nowrap;
+    text-decoration: none;
   }
 
   .w3-bar-item :hover {
     color: #8f4099 !important;
     background-color: #71c8bd !important;
+    text-decoration: none;
   }
 
   .w3-bar-item :hover {
     background-color: #71c8bd;
+    text-decoration: none;
+  }
+
+  .w3-bar-block.w3-center .w3-bar-item {
+    text-decoration: none;
   }
 
   .a :hover {
@@ -136,15 +144,12 @@
         </g>
       </svg>
     </a>
-    <a href="music.html" onclick="w3_close()" class="w3-bar-item w3-button">MUSIC</a>
-    <a href="clothes.html" onclick="w3_close()" class="w3-bar-item w3-button">CLOTHES</a>
-    <a href="culture.html" onclick="w3_close()" class="w3-bar-item w3-button">CULTURE</a>
-    <a href="shop.html" onclick="w3_close()" class="w3-bar-item w3-button">SHOP</a>
-    <a href="about.html" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT US</a>
+    <a href="music.html" onclick="w3_close()" class="w3-bar-item">MUSIC</a>
+    <a href="clothes.html" onclick="w3_close()" class="w3-bar-item">CLOTHES</a>
+    <a href="culture.html" onclick="w3_close()" class="w3-bar-item">CULTURE</a>
+    <a href="shop.html" onclick="w3_close()" class="w3-bar-item">SHOP</a>
+    <a href="about.html" onclick="w3_close()" class="w3-bar-item">ABOUT US</a>
     <br/>
-    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-hide-large">
-      <b>&#10005;</b>
-    </a>
   </nav>
 
   <!-- Top menu on small screens -->
@@ -154,7 +159,7 @@
         <b>4422</b>
       </a>
     </span>
-    <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">&#9776;</a>
+    <a href="javascript:void(0)" class="w3-right w3-white" style="padding: 8px 16px;" onclick="w3_open()">&#9776;</a>
   </header>
 
   <!-- Overlay effect when opening sidebar on small screens -->
@@ -196,15 +201,7 @@
     function w3_close() {
       document.getElementById("mySidebar").style.display = "none";
       document.getElementById("myOverlay").style.display = "none";
-    }
-
-// Modal Image Gallery
-// function onClick(element) {
-//   document.getElementById("img01").src = element.src;
-//   document.getElementById("modal01").style.display = "block";
-//   var captionText = document.getElementById("caption");
-//   captionText.innerHTML = element.alt;
-// }
+    } 
 
   </script>
 
